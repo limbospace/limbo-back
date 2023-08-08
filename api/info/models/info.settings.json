@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infos",
+  "info": {
+    "name": "Info"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "address_road": {
+      "type": "string"
+    },
+    "address_city": {
+      "type": "string"
+    },
+    "address_mail": {
+      "type": "string"
+    },
+    "info_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "info_text": {
+      "type": "richtext"
+    }
+  }
+}

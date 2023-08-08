@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_people_artists",
+  "info": {
+    "name": "artist",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media.image"
+    }
+  }
+}
